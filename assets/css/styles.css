@@ -115,24 +115,37 @@ li{
   text-shadow: 0px -2px 16px #70A8C3;
 }
 
-.contact {
-  font-size: 2em;
-  padding: 16em 3em 0em 3em;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #F9F9F9;
+  text-align: center;
 }
 
+.contact {
+  size: 2em;
+  text-align: left;
+  float: left;
+  padding: 0em 8em 0em 8em;
+}
 .fa-instagram {
   color: black;
-  size: 0.25em; 
+  size: 35.35px; 
 }
 
 .fa-pinterest {
   color: #BB0F24;
+  size: 35.35px; 
 }
 
 .fa-facebook {
-  color: #3C5A96; 
+  color: #3C5A96;
+  size: 35.35px;  
 }
 
 .fa-github {
   color: #222222; 
+  size: 35.35px; 
 }
