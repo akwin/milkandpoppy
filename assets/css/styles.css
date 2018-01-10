@@ -1,39 +1,26 @@
 /*   
- * Template Name: Orbit - Responsive Resume/CV Template for Developers
+ * Sexy StyleSheets for Milk n Poppy
  * Version: 1.0
  * Author: Xiaoying Riley
  * Twitter: @3rdwave_themes
  * License: Creative Commons Attribution 3.0 License
  * Website: http://themes.3rdwavemedia.com/
 */
+
+
 /* styles.css */
+
+
 /* ======= Base ======= */
+
 body {
   /* font-family: 'Roboto', sans-serif; */
   font-family: 'Vollkorn', serif;
-  color: bisque;
-  background: #f5f5f5;
-  font-size: 10px;
-  padding: 30px;
+  color: rgb(255, 0, 0);
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
-#logo {
-  width: 160px;
-  padding: 1em 0em 0em 1em
-}
-
-h1 {
-  font-family: 'Homemade Apple', cursive;
-  font-weight: 1000;
-  font-size: 17px;
-  padding: 0.1em 0em 0em 3.8em;
-  margin: 0em;
-  color: black;
-  text-shadow: 0px 0px 52px black;
-} 
 
 h2,
 h3,
@@ -43,18 +30,19 @@ h6 {
   font-weight: 400;
 }
 
-a { 
+a {
   color: #70A8C3;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out; 
+  -o-transition: all 0.4s ease-in-out;
 }
 
 a:hover {
   text-decoration: none;
   /* color: #1a454f; */
 }
+
 
 /* a:focus {
   text-decoration: none;
@@ -67,85 +55,112 @@ p {
 .wrapper {
   display: flex;
   flex-direction: row;
-  background: #42A8C0;
-  max-width: 960px;
-  margin: 0 auto;
-  position: relative;
+  position: absolute;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar {
-  position:fixed;
-  top:0px;
-  bottom:0px;
-  left:0px;
-  right:0px;
-  width: 200px;
   background: #F9F9F9;
-}
-
-.content {
-  position:fixed;
-    top:0px;
-    bottom:0px;
-    left:200px;
-    right:0px;
-
-    background: #FFFFFF;
-}
-
-
-ul {
-  list-style-type: none;
-  color: bisque;
+  /* height: 100%; */
+  /* flex-grow: 1; */
+  /* flex-direction: column; */
+  /* align-content: space-between; */
   
 }
+.index {
+  /* flex-direction: column; */
+  /* flex-basis: auto; */
+}
 
-li{
-  margin: 0.4em 0em;
+.logo {
+}
+
+#logo-img {
+  width: 16em;
+}
+
+#logo-text {
+  font-family: 'Homemade Apple', cursive;
+  font-weight: 1000;
+  font-size: 3em;
+  color: black;
+  text-shadow: 0px 0px 52px black;
 }
 
 .categories {
   font-family: 'Francois One', sans-serif;
-  font-size: 0.8em;
-  padding: 1.4em 0em 0em 2.8em;
+  font-size: 1.5em;
   color: #041A01;
   text-shadow: 0px -2px 16px #70A8C3;
 }
 
+
+.content {
+  /* flex-grow: 8; */
+  background: #FFFFFF;
+}
+
+.grid {
+
+}
+
+.column {
+
+}
+
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   background: #F9F9F9;
   text-align: center;
 }
 
 .contact {
-  size: 2em;
-  text-align: left;
-  float: left;
-  padding: 0em 8em 0em 8em;
 }
+
 .fa-instagram {
   color: black;
-  size: 35.35px; 
+  size: 35.35px;
 }
 
 .fa-pinterest {
   color: #BB0F24;
-  size: 35.35px; 
+  size: 35.35px;
 }
 
 .fa-facebook {
   color: #3C5A96;
-  size: 35.35px;  
+  size: 35.35px;
 }
 
 .fa-github {
-  color: #222222; 
-  size: 35.35px; 
+  color: #222222;
+  size: 35.35px;
+}
+
+@media (min-width:320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+}
+
+@media (min-width:481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+
+@media (min-width:641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media (min-width:961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media (min-width:1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+
+@media (min-width:1281px) {
+  /* hi-res laptops and desktops */
 }
