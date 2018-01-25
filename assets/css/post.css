@@ -1,0 +1,17 @@
+.jumbotron {
+    /* width: 100px; */
+    
+}
+
+.main-pic {
+    max-width: 85vw;
+    border-radius: 0px;
+
+}
+
+.post-heading {
+    margin: 1em;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 800;
+}

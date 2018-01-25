@@ -1,129 +1,163 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]-->
+<html>
+<title>Milk & Poppy</title>
 
 <head>
-    <title>Milk & Poppy</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="How you doing?">
-    <meta name="author" content="Akanksha Sharma">
-    <link rel="shortcut icon" href="favicon.ico">
-    <!-- Global CSS -->
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Theme CSS -->
-   <!-- <link id="theme-style" rel="stylesheet" href="assets/css/styles.css"> --> 
-
-    <!-- Fonts CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles-flex.css">
+    <!-- Font CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
 </head>
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
 
-<body>
-    <div class="wrapper">
-        <div class="sidebar">
+<body class="w3-white w3-content" style="max-width:2500px;">
 
-            <!-- Index of Contents -->
-            <div class="index">
-
-                <div class="logo" href="index.html">
-                    <img id="logo-img" src="/Users/winnie06/realmnp/assets/images/logo.png" alt="Milk&Poppy">
-                    <div id="logo-text">Milk & Poppy</div>
-                </div>
-
-                <div class="categories">
-                    <ul>
-                        <a href="eat.html">
-                            <li>Eat </li>
-                        </a>
-                        <a href="live.html">
-                            <li>Live</li>
-                        </a>
-                        <a href="love.html">
-                            <li>Love</li>
-                        </a>
-                        <a href="travel.html">
-                            <li>Travel</li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Footer -->
-
-            <div class="footer">
-                <div class="contact">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                    <i class="fa fa-pinterest" aria-hidden="true"></i>
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </div>
-            </div>
-
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse" style="z-index:3;width:300px;" id="mySidebar">
+        <div class="w3-container logo">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <img src="assets/images/logo.png" class="w3-round logo-img">
+            <h4>
+                <b class="logo-text">Milk & Poppy</b>
+            </h4>
+            <p class="text-grey">ideas, thoughts, stories</p>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#eat" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+                </i>eat</a>
+            <a href="#live" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+                </i>live</a>
+            <a href="#love" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+                </i>love</a>
+            <a href="#travel" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+                </i>travel</a>
         </div>
 
+        <div class="social-icons">
+            <a href="#" class="fa fa-facebook-official" target="blank"></a>
+            <a href="#" class="fa fa-instagram" target="blank"></a>
+            <a href="#" class="fa fa-pinterest-p" target="blank"></a>
+            <a href="#" class="fa fa-github" target="blank"></a>
+        </div>
 
-        <div class="content">
-            <div class="grid">
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Header -->
+        <header id="portfolio">
+            <a href="#">
+                <img src="assets/images/logo.png" style="width:85px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity">
+            </a>
+            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </span>
+            <div class="container">
+                <!-- Column 1 -->
                 <div class="column">
-                    <div class="post">
-                        <p>Column 1 Post</p>
-                    </div>
-                    <div class="post">
-                        <p>Column 1 Post</p>
-                    </div>
-                    <div class="post">
-                        <p>Column 1 Post</p>
-                    </div>
-                    <div class="post">
-                        <p>Column 1 Post</p>
-                    </div>
-                    <div class="post">
-                        <p>Column 1 Post</p>
-                    </div>
+                    <!-- Column 1 - Post 1 -->
+                    <a href="posts/eat/chicken-bean.html">
+                        <article class="post-container">
+                            <img class="post-img" id="chix-bean" src="assets/images/eat/chicken-bean/img.jpg">
+                            <div class="post-category">
+                                eat
+                            </div>
+                            <div class="post-title"> 
+                                Chicken Bean Salad
+                            </div>
+                        </article>
+                    </a>
+                    <!-- Column 1 - Post 2 -->
+                    <article class="post-container">
+                        <img class="post-img" id="chix-bean" src="assets/images/eat/chicken-bean/img.jpg">
+                        <div class="post-category">
+                            eat
+                        </div>
+                        <div class="post-title">
+                            Chicken Bean Salad
+                        </div>
+                    </article>
+                    <!-- Column 1 - Post 3 -->
+                    <article class="post-container">
+                        <img class="post-img" id="chix-bean" src="assets/images/eat/chicken-bean/img.jpg">
+                        <div class="post-category">
+                            eat
+                        </div>
+                        <div class="post-title">
+                            Chicken Bean Salad
+                        </div>
+                    </article>
+                    <!-- Column 1 - Post 4 -->
+                    <article class="post-container">
+                        <img class="post-img" id="chix-bean" src="assets/images/eat/chicken-bean/img.jpg">
+                        <div class="post-category">
+                            eat
+                        </div>
+                        <div class="post-title">
+                            Chicken Bean Salad
+                        </div>
+                    </article>
                 </div>
+                <!-- Column 2 -->
                 <div class="column">
-                    <div class="post">
-                        <p>Column 2 Post</p>
-                    </div>
-                    <div class="post">
-                        <p>Column 2 Post</p>
-                    </div>
-                    <div class="post">
-                        <p>Column 2 Post</p>
-                    </div>
-                    <div class="post">
-                        <p>Column 2 Post</p>
-                    </div>
-                    <div class="post">
-                        <p>Column 2 Post</p>
-                    </div>
-                    <div class="post">
-                        <p>Column 2 Post</p>
-                    </div>
-                    <div class="post">
-                        <p>Column 2 Post</p>
-                    </div>
+                    <!-- Column 2 - Post 1 -->
+                    <article class="post-container">
+                        <img class="post-img" id="chic-bean" src="assets/images/eat/chicken-bean/img.jpg">
+                    </article>
+                    <!-- Column 2 - Post 2 -->
+                    <article class="post-container">
+                        <img class="post-img" id="chic-bean" src="assets/images/eat/chicken-bean/img.jpg">
+                    </article>
+                    <!-- Column 2 - Post 3 -->
+                    <article class="post-container">
+                        <img class="post-img" id="chic-bean" src="assets/images/eat/chicken-bean/img.jpg">
+                    </article>
+                    <!-- Column 2 - Post 4 -->
+                    <article class="post-container">
+                        <img class="post-img" id="chic-bean" src="assets/images/eat/chicken-bean/img.jpg">
+                    </article>
+
                 </div>
             </div>
-        </div>
+        </header>
     </div>
 
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
 </body>
 
 </html>
