@@ -332,14 +332,16 @@ h4 {
 }
 
 .post-category {
+    font-family: 'Varela Round', sans-serif;
     text-align: center;
     text-decoration: underline; 
 }
 
 .post-title {
+    font-family: 'Dancing Script', cursive;
     text-align: center;
-    font-size: 2em;
-    font-weight: 800;
+    font-size: 2.5em;
+    font-weight: 300;
 }
 
 #column-one-post-img {

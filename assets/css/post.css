@@ -3,6 +3,10 @@
     
 }
 
+ul {
+    list-style-type: none;
+}
+
 .main-pic {
     max-width: 85vw;
     border-radius: 0px;
@@ -14,6 +18,14 @@
     font-size: 4em;
     text-align: center;
     font-weight: 800;
+}
+
+.description {
+
+}
+
+.you-will-need {
+    text-align: center;
 }
 
 .instructions-image {
