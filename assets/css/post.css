@@ -7,6 +7,7 @@ ul {
     list-style-type: none;
 }
 
+
 .main-pic {
     max-width: 85vw;
     border-radius: 0px;
@@ -14,18 +15,43 @@ ul {
 }
 
 .post-heading {
-    margin: 1em;
-    font-size: 4em;
+    font-family: 'Merriweather', serif;
+    margin: 0.4em;
+    font-size: 2.8em;
     text-align: center;
-    font-weight: 800;
+    font-weight: 200;
 }
 
 .description {
+    font-family: 'Georgia';
+    font-size: 1.1em;
+    letter-spacing: 0.06em;
+    font-style: italic;
+    padding: 0.5em 0;
+}
 
+.recipe-container {
+    border: 1px solid black;
+    margin: 0.5em 5em;
 }
 
 .you-will-need {
-    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.6em;
+    letter-spacing: 0.05em;
+    padding: 0.5em 1em;
+}
+
+.instructions {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.6em;
+    letter-spacing: 0.05em;
+    padding: 0.5em 1em;
+}
+
+.instructions-heading {
+    font-size: 1.6em;
+    margin: 0;
 }
 
 .instructions-image {
