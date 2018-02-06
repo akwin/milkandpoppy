@@ -795,6 +795,7 @@ a {
 }
 
 @media (min-width:601px) {
+
     .w3-col.m1 {
         width: 8.33333%
     }
@@ -838,6 +839,7 @@ a {
 }
 
 @media (min-width:993px) {
+    
     .w3-col.l1 {
         width: 8.33333%
     }
@@ -953,7 +955,21 @@ a {
     }
 }
 
-@media (max-width:768px) {
+/* Use this for mobile */
+
+@media (max-width:820px) {
+    .container   {
+        padding: 0.5em;
+    }
+    .recipe-container {
+        margin: 0.5em;
+    }
+    .instructions-image {
+        max-width: 100%;
+    }
+    .main-pic {
+        max-width: 100%;
+    }
     .w3-modal-content {
         width: 500px
     }
