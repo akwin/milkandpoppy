@@ -346,6 +346,16 @@ h4 {
     width: 100%;
 }
 
+.share-btn {
+    padding: 8.9px;
+    border-radius: 4px;
+    margin-top: -10px;
+}
+
+.share-icon {
+    margin: 6px;
+}
+
 img {
     border-radius: 15px;
 }
@@ -629,6 +639,10 @@ a {
     width: 100%;
     text-align: left;
     padding: 8px 16px
+}
+
+.w3-main {
+    background-color: #fefefe;
 }
 
 .w3-main,
@@ -965,7 +979,7 @@ a {
         max-width: 100%;
     }
     footer {
-        margin: 2.2em;
+        margin: 5em;
     }
     .main-pic {
         max-width: 100%;

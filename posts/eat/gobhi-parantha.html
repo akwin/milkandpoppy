@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../favicon.ico">
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="../../assets/css/post.css">
     <link id="theme-style" rel="stylesheet" href="../../assets/css/styles-flex.css">
@@ -21,6 +22,18 @@
 </head>
 
 <body class="w3-white w3-content" style="max-width:2500px;">
+
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-collapse" style="z-index:3;width:300px;" id="mySidebar">
@@ -178,27 +191,25 @@
 
     <!--Footer-->
     <footer>
+        <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fmilkandpoppy.com%2Fposts%2Feat%2Fgobhi-parantha.html&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId"
+            width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         <!-- Social Button HTML -->
 
-        <!-- Twitter -->
-        <a href="http://twitter.com/share?url=<www.facebook.com>&text=www.facebook.com" target="_blank" class="share-btn twitter">
-            <i class="fa fa-twitter"></i>
+        <!-- <!-- Twitter  -->
+        <a href="http://twitter.com/share?url=<http://www.milkandpoppy.com/index.html>&text=www.milkandpoppy.com" target="_blank"
+            class="share-btn twitter">
+            <i class="share-icon fa fa-twitter"></i>
         </a>
 
-        <!-- Google Plus -->
-        <a href="https://plus.google.com/share?url=<BTN>" target="_blank" class="share-btn google-plus">
-            <i class="fa fa-google-plus"></i>
-        </a>
+        <!-- <!-- Google Plus  -->
+        <!--<a href="https://plus.google.com/share?url=<http://www.milkandpoppy.com/index.html>" target="_blank" class="share-btn google-plus">
+            <i class="share-icon fa fa-google-plus"></i>
+        </a>-->
 
-        <!-- Facebook -->
-        <a href="http://www.facebook.com/sharer/sharer.php?u=<URL>" target="_blank" class="share-btn facebook">
-            <i class="fa fa-facebook"></i>
-        </a>
-
-
-        <!-- Email -->
-        <a href="mailto:?subject=<SUBJECT&body=<BODY>" target="_blank" class="share-btn email">
-            <i class="fa fa-envelope"></i>
+        <!-- <!-- Email  -->
+        <a href="mailto:?subject=Cool New Site&body=Found a blog i thought you'd like. Take a look - www.milkandpoppy.com" target="_blank"
+            class="share-btn email">
+            <i class="share-icon fa fa-envelope"></i>
         </a>
     </footer>
 
