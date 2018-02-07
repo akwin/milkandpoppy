@@ -951,7 +951,7 @@ a {
     }
 }
 
-/* Use this for mobile */
+/* &&& Use this for mobile */
 
 @media (max-width:820px) {
     .container {
@@ -959,9 +959,13 @@ a {
     }
     .recipe-container {
         margin: 0.5em;
+        border: none;
     }
     .instructions-image {
         max-width: 100%;
+    }
+    footer {
+        margin: 2.2em;
     }
     .main-pic {
         max-width: 100%;
